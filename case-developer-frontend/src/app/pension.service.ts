@@ -8,7 +8,6 @@ export interface Employee {
   name: string;
   position: string;
   department: string;
-  // Add other fields as needed
 }
 
 @Injectable({
