@@ -1,0 +1,15 @@
+services:
+  mysql:
+    image: mysql:8.1.0
+    restart: no
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: befrank
+      MYSQL_USER: build
+      MYSQL_PASSWORD: build
+    volumes:
+      - mysql:/var/lib/mysql
+    ports:
+      - "127.0.0.1:3306:3306"
+volumes:
+  mysql:
